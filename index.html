@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1 id="main_head" class="main-heading">Password Generator</h1>
+        <input type="text" id="pass_display" class="pass-display" placeholder="Password will be shown here">
+        <div class="slidecontainer">
+            <h4>Custom range slider:</h4>
+            <input id="pass_length" class=" slider" type="range" min="8" max="15" value="8">
+            <p>Value: <span id="demo"></span></p>
+        </div>
+        <button id="btn_generate" class="btn-generate" onclick="generate()">Generate</button>
+        <details>
+            <summary>Generate By Username:</summary>
+            <input type="text" id="user_display" class="pass-display" placeholder="Enter your username">
+            <div class="radio-option">
+                <input type="radio" id="easyOp" name="radio_btn" value="easy">
+                <label>Easy</label><br>
+                <input type="radio" id="medOp" name="radio_btn" value="medium">
+                <label>Medium</label><br>
+                <input type="radio" id="hardOp" name="radio_btn" value="hard" required>
+                <label>Hard</label>
+            </div>
+
+
+        </details>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
